@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - a function that prints 10x the alphabet
+ * print_alphabet_x10 - prints 10x the alphabet in lowercase
  */
 
 void print_alphabet_x10(void)
@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 
 	for (count = 0; count < 10; count++)
 	{
-		while (letters <= 'z')
+		while (letter <= 'z')
 		{
 			_putchar(letter);
 			letter++;
