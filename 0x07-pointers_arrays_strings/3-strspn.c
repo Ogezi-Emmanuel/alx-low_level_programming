@@ -10,7 +10,7 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int count = o;
+	unsigned int count = 0;
 	int found;
 	int i;
 
