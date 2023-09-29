@@ -9,12 +9,12 @@
 
 int is_palindrome_recursive(char *a, char *z)
 {
-	if (a >= b)
+	if (a >= z)
 	{
 		return (1);
 	}
 
-	if (*a != *b)
+	if (*a != *z)
 	{
 		return (0);
 	}
