@@ -1,41 +1,40 @@
 #include "main.h"
 
 /**
- * is_prime_number - returns 1 if the input is a prime number, otherwise 0
- * @n: the number being inputed
- * Return: 1 if the input is a prime number, otherwise 0
+ * is_prime_recursive - function to check if the number is a prime
+ * @n: the number
+ * @i: the current divisor
+ * Return: 1 if n is prime, 0 otherwise
  */
 
-int is_prime_number(int n)
+int is_prime_recursive(int n, int i)
 {
-	int i;
-
 	if (n <= 1)
 	{
 		return (0);
 	}
 
-	if (n <= 3)
+	if (i == n)
 	{
 		return (1);
 	}
 
-	if (n % 2 == 0 || n % 3 == 0)
+	if (n % i == 0)
 	{
 		return (0);
 	}
 
-	i = 5;
+	return (is_prime_recursive(n, i + 1));
+}
 
-	while (i * i <= n)
-	{
-		(if n % i == 0 || n % (i + 2))
-		{
-			return (0);
-		}
 
-		i += 6;
-	}
+/**
+ * is_prime_number - returns 1 if the input is a prime number, otherwise 0
+ * @n: the number
+ * Return: 1 if the input is a prime number, otherwise 0
+ */
 
-	return (1);
+int is_prime_number(int n)
+{
+	return (is_prime_recursive(n, 2));
 }
