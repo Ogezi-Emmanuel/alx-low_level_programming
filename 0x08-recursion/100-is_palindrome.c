@@ -12,8 +12,10 @@ int str_len(char *s)
 	{
 		return (0);
 	}
-
-	return (1 + str_len(s + 1));
+	else
+	{
+		return (1 + str_len(s + 1));
+	}
 }
 
 /**
@@ -26,17 +28,16 @@ int str_len(char *s)
 
 int is_palindrome_recursive(char *s,int a, int z)
 {
-	if (a >= z)
+	if (*(s + a) == *(s + z))
 	{
-		return (1);
+		if ( a == z || a == z + 1)
+		{
+			return (1);
+		}
+		return (0 + is_palindrome_recursive(s, a + 1, z - 1));
 	}
 
-	if (s[a] != s[z])
-	{
-		return (0);
-	}
-
-	return (is_palindrome_recursive(s, a + 1, z - 1))
+	return (0);
 }
 
 /**
@@ -47,7 +48,10 @@ int is_palindrome_recursive(char *s,int a, int z)
 
 int is_palindrome(char *s)
 {
-	int length = str_len(s);
+	if (*s == '\0')
+	{
+		return (1);
+	}
 
-	return (is_palindrome_recursive(s, 0, length - 1));
+	return (is_palindrome_recursive(s, 0, str_len(s) - 1));
 }
