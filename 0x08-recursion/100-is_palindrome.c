@@ -26,11 +26,11 @@ int str_len(char *s)
  * Return: 1 if its a palindrome, 0 otherwise
  */
 
-int is_palindrome_recursive(char *s,int a, int z)
+int is_palindrome_recursive(char *s, int a, int z)
 {
 	if (*(s + a) == *(s + z))
 	{
-		if ( a == z || a == z + 1)
+		if (a == z || a == z + 1)
 		{
 			return (1);
 		}
