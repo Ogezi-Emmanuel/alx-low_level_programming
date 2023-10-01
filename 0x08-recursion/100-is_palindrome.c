@@ -19,8 +19,8 @@ int str_len(char *s)
 /**
  * is_palindrome_recursive - function that checks if a string is a palindrome
  * @s: the string to check
- * @a: pointer to the beginning of the string
- * @z: pointer to the end of the string
+ * @a: starting index
+ * @z: ending index
  * Return: 1 if its a palindrome, 0 otherwise
  */
 
