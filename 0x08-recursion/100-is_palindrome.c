@@ -31,7 +31,7 @@ int is_palindrome_recursive(char *s,int a, int z)
 		return (1);
 	}
 
-	if (s[a] != a[z])
+	if (s[a] != s[z])
 	{
 		return (0);
 	}
