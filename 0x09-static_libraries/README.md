@@ -1,0 +1,1 @@
+first static libraries project
