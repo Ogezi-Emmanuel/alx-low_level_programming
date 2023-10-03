@@ -5,7 +5,7 @@
  * main - the entry point of the program
  * @argc: number of cl arguments
  * @argv: array containing the cl arguments
- * Return: 1 
+ * Return: 1 if error, 0 if it runs correctly
  */
 
 int main(int argc, char *argv[])
