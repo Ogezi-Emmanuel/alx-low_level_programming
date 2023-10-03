@@ -5,4 +5,6 @@
  * @c: character to be converted
  */
 
-int _islower(int c);
+int _islower(int c)
+{
+}

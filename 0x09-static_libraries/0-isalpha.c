@@ -5,4 +5,6 @@
  * @c: the character to be converted
  */
 
-int _isalpha(int c);
+int _isalpha(int c)
+{
+}

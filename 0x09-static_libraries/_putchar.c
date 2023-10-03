@@ -5,4 +5,6 @@
  * @c: the character to be printed
  */
 
-int _putchar(char c);
+int _putchar(char c)
+{
+}
