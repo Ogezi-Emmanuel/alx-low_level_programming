@@ -4,7 +4,8 @@
 /**
  * main - the entry point of the program
  * @argc: number of cl arguments
- * @argv: array containing the cl argumentws
+ * @argv: array containing the cl arguments
+ * Return: 1 
  */
 
 int main(int argc, char *argv[])
