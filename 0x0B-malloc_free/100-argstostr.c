@@ -9,7 +9,7 @@
 
 char *argstostr(int ac, char **av)
 {
-	int al, int tl = 0, int i;
+	int al, tl = 0, i;
 	int cp = 0;
 	char *new_string;
 
@@ -26,7 +26,6 @@ char *argstostr(int ac, char **av)
 		{
 			al++;
 		}
-		
 		tl += al + 1;
 	}
 
@@ -36,7 +35,6 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-
 	cp = 0;
 
 	for (i = 0; i < ac; i++)
@@ -49,8 +47,6 @@ char *argstostr(int ac, char **av)
 		}
 		new_string[cp++] = '\n';
 	}
-
 	new_string[cp] = '\0';
-
 	return (new_string);
 }
