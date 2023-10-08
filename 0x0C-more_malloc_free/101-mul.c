@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 	}
 
 	*num1_str = argv[1];
-	*num2_str - argv[2];
+	*num2_str = argv[2];
 
 	if (!is_valid_number(num1_str) || !is_valid_number(num2_str))
 	{
